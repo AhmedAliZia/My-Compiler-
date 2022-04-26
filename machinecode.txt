@@ -1,0 +1,32 @@
+0: T0='d'
+1: my_char=T0
+2: OUT "my char contains: "
+3: OUT my_char
+4: OUT \N
+5: OUT "enter a number"
+6: OUT \N
+7: IN num
+8: T1=0 
+9: a=T1
+10: T2=1 
+11: b=T2
+12: T3=0 
+13: c=T3
+14: OUT "The fibonacci seq is: "
+15: OUT \N
+16: OUT a
+17: OUT \N
+18: OUT b
+19: OUT \N
+20: IF c<num GOTO 22
+21: GOTO 32
+22: T4=a+b
+23: temp=T4
+24: a=b
+25: b=temp
+26: OUT temp
+27: OUT \N
+28: T6=1
+29: T5=c+T6
+30: c=T5
+31: GOTO 20
